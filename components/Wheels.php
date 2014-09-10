@@ -36,7 +36,7 @@ class Wheels extends CApplicationComponent
     public function init()
     {
         /* ensure all widgets - plugins are accessible to the library */
-        \Yii::import('wheels.widgets.*');
+        Yii::import('wheels.widgets.*');
 
         /* register css assets */
         foreach ($this->assetsCss as $css) {
